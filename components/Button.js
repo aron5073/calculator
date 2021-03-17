@@ -3,6 +3,7 @@ import {StyleSheet, Text, TouchableOpacity, Dimensions} from 'react-native';
 
 const screens = Dimensions.get('window');
 const buttonWidth = screens.width / 4;
+const zerostyle = (screens.width / 2 - 10) / 4;
 
 const styles = StyleSheet.create({
   button: {
@@ -16,12 +17,20 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   text: {
-    color: 'orange',
+    color: 'white',
     fontSize: 28,
   },
   buttonDouble: {
     flex: 0,
     width: screens.width / 2 - 10,
+    alignItems: 'flex-start',
+    paddingLeft: zerostyle,
+  },
+  buttongrey: {
+    backgroundColor: 'grey',
+  },
+  buttonorange: {
+    backgroundColor: '#FFB132',
   },
 });
 
@@ -29,6 +38,13 @@ export default ({onPress, text, size}) => {
   const buttonStyles = [styles.button];
   if (size === 'double') {
     buttonStyles.push(styles.buttonDouble);
+  }
+
+  if (size === 'lightgrey') {
+    buttonStyles.push(styles.buttongrey);
+  }
+  if (size === 'orange') {
+    buttonStyles.push(styles.buttonorange);
   }
   return (
     <TouchableOpacity onPress={onPress} style={buttonStyles}>

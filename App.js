@@ -35,28 +35,49 @@ export default class App extends React.Component {
         <SafeAreaView>
           <Text style={styles.value}>75</Text>
           <Row>
-            <Button text="AC" onPress={() => alert('todo1')}></Button>
-            <Button text="+/-" onPress={() => alert('todo2')}></Button>
-            <Button text="%" onPress={() => alert('todo3')}></Button>
-            <Button text="/" onPress={() => alert('todo4')}></Button>
+            <Button
+              text="AC"
+              size="lightgrey"
+              onPress={() => alert('todo1')}></Button>
+            <Button
+              text="+/-"
+              size="lightgrey"
+              onPress={() => alert('todo2')}></Button>
+            <Button
+              text="%"
+              size="lightgrey"
+              onPress={() => alert('todo3')}></Button>
+            <Button
+              text="/"
+              size="orange"
+              onPress={() => alert('todo4')}></Button>
           </Row>
           <Row>
             <Button text="7" onPress={() => alert('todo1')}></Button>
             <Button text="8" onPress={() => alert('todo2')}></Button>
             <Button text="9" onPress={() => alert('todo3')}></Button>
-            <Button text="x" onPress={() => alert('todo4')}></Button>
+            <Button
+              text="x"
+              size="orange"
+              onPress={() => alert('todo4')}></Button>
           </Row>
           <Row>
             <Button text="4" onPress={() => alert('todo1')}></Button>
             <Button text="5" onPress={() => alert('todo2')}></Button>
             <Button text="6" onPress={() => alert('todo3')}></Button>
-            <Button text="-" onPress={() => alert('todo4')}></Button>
+            <Button
+              text="-"
+              size="orange"
+              onPress={() => alert('todo4')}></Button>
           </Row>
           <Row>
             <Button text="1" onPress={() => alert('todo1')}></Button>
             <Button text="2" onPress={() => alert('todo2')}></Button>
             <Button text="3" onPress={() => alert('todo3')}></Button>
-            <Button text="*" onPress={() => alert('todo4')}></Button>
+            <Button
+              text="*"
+              size="orange"
+              onPress={() => alert('todo4')}></Button>
           </Row>
           <Row>
             <Button
@@ -64,7 +85,10 @@ export default class App extends React.Component {
               size="double"
               onPress={() => alert('todo1')}></Button>
             <Button text="." onPress={() => alert('todo2')}></Button>
-            <Button text="=" onPress={() => alert('todo3')}></Button>
+            <Button
+              text="="
+              size="orange"
+              onPress={() => alert('todo3')}></Button>
           </Row>
         </SafeAreaView>
       </View>
