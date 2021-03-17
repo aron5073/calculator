@@ -17,7 +17,7 @@ const screens = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightgrey',
+    backgroundColor: '#000',
     justifyContent: 'flex-end',
   },
   value: {
@@ -44,7 +44,7 @@ export default class App extends React.Component {
             <Button text="7" onPress={() => alert('todo1')}></Button>
             <Button text="8" onPress={() => alert('todo2')}></Button>
             <Button text="9" onPress={() => alert('todo3')}></Button>
-            <Button text="X" onPress={() => alert('todo4')}></Button>
+            <Button text="x" onPress={() => alert('todo4')}></Button>
           </Row>
           <Row>
             <Button text="4" onPress={() => alert('todo1')}></Button>
@@ -59,7 +59,10 @@ export default class App extends React.Component {
             <Button text="*" onPress={() => alert('todo4')}></Button>
           </Row>
           <Row>
-            <Button text="0" onPress={() => alert('todo1')}></Button>
+            <Button
+              text="0"
+              size="double"
+              onPress={() => alert('todo1')}></Button>
             <Button text="." onPress={() => alert('todo2')}></Button>
             <Button text="=" onPress={() => alert('todo3')}></Button>
           </Row>
