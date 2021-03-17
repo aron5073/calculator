@@ -1,7 +1,12 @@
-import react, {Children} from 'react';
+import React from 'react';
 
-import {View, view} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 
+const styles = StyleSheet.create({
+  rowContainer: {
+    flexDirection: 'row',
+  },
+});
 export default ({children}) => (
-  <View style={{flexDirection: 'row'}}>( children)</View>
+  <View style={styles.rowContainer}>{children}</View>
 );
